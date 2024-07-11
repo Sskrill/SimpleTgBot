@@ -9,6 +9,7 @@ type Proccesor interface {
 type Event struct {
 	Type Type
 	Text string
+	Meta interface{}
 }
 type Type int
 

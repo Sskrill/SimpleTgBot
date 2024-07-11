@@ -8,10 +8,10 @@ import (
 )
 
 type Repo interface {
-	Save(p *Page)
+	Save(p *Page) error
 	PickRandom(userName string) (*Page, error)
 	Remove(p *Page) error
-	IsExists(p *Page) error
+	IsExists(p *Page) (bool, error)
 }
 type Page struct {
 	URL      string
