@@ -1,4 +1,4 @@
-package telegram
+package telegram2
 
 import (
 	"github.com/Sskrill/tgBotTest/clients/telegram"
